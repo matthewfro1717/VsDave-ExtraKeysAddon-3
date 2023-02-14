@@ -92,7 +92,7 @@ import lime.ui.Window;
 import openfl.geom.Rectangle;
 import openfl.display.Sprite;
 
-import vlc.MP4Handler;
+import hxcodec.VideoHandler;
 
 using StringTools;
 
