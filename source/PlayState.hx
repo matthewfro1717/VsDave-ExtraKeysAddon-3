@@ -299,7 +299,7 @@ class PlayState extends MusicBeatState
 	var bfNoteCamOffset:Array<Float> = new Array<Float>();
 	var dadNoteCamOffset:Array<Float> = new Array<Float>();
 
-	var video:MP4Handler;
+        var video:VideoHandler = new VideoHandler();
 	public var modchart:ExploitationModchartType;
 	public static var modchartoption:Bool = true;
 	var weirdBG:FlxSprite;
