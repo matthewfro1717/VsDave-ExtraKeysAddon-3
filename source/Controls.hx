@@ -11,7 +11,9 @@ import flixel.input.gamepad.FlxGamepadButton;
 import flixel.input.gamepad.FlxGamepadInputID;
 import flixel.input.keyboard.FlxKey;
 
-enum abstract Action(String) to String from String
+using StringTools;
+
+class Controls
 {
 	var UP = "up";
 	var LEFT = "left";
