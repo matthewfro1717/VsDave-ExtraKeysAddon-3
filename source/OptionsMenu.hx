@@ -203,11 +203,9 @@ class OptionsMenu extends MusicBeatState
 				case 12:
 					if (!awaitingExploitation) FlxG.save.data.modchart = !FlxG.save.data.modchart;
 					updateGroupControls(FlxG.save.data.modchart ? 'Mod Chart OFF' : 'Mod Chart ON', 12, 'Vertical');
-				#if debug
 				case 13:
 					if (!awaitingExploitation) FlxG.save.data.botplay = !FlxG.save.data.botplay;
 					updateGroupControls(FlxG.save.data.botplay ? 'Bot Play ON' : 'Bot Play OFF', 13, 'Vertical');
-				#end
 			}
 		}
 	}
