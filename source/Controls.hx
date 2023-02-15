@@ -151,7 +151,6 @@ class Controls
 	var T10_R = "t10-release";
 	var T11_R = "t11-release";
 }
-#else
 @:enum
 abstract Action(String) to String from String
 {
