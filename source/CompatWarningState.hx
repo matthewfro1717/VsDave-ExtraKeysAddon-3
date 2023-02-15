@@ -24,10 +24,6 @@ class CompatWarningState extends MusicBeatState
 
     public override function create():Void
     {
-        bg = new FlxBackdrop(Paths.image('ui/checkeredBG', 'preload'), 1, 1, true, true, 1, 1);
-        bg.antialiasing = true;
-        add(bg);
-
         warningBox = new FlxText(0, (FlxG.height / 2) - 300, FlxG.width, LanguageManager.getTextString("compat_warning"), 45);
         warningBox.setFormat("Comic Sans MS Bold", 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
         warningBox.antialiasing = true;
