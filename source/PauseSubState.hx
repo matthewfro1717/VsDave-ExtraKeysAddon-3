@@ -67,7 +67,7 @@ class PauseSubState extends MusicBeatSubstate
 		backBg.scrollFactor.set();
 		add(backBg);
 
-		bg = new FlxBackdrop(Paths.image('ui/checkeredBG', 'preload'), 1, 1, true, true, 1, 1);
+		bg = new flixel.util.FlxAxes(Paths.image('ui/checkeredBG', 'preload'), 1, 1, true, true, 1, 1);
 		bg.alpha = 0;
 		bg.antialiasing = true;
 		bg.scrollFactor.set();
