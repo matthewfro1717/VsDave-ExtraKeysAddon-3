@@ -11,9 +11,8 @@ import flixel.input.gamepad.FlxGamepadButton;
 import flixel.input.gamepad.FlxGamepadInputID;
 import flixel.input.keyboard.FlxKey;
 
-using StringTools;
-
-class Controls
+#if (haxe >= "4.0.0")
+enum abstract Action(String) to String from String
 {
 	var UP = "up";
 	var LEFT = "left";
@@ -151,6 +150,7 @@ class Controls
 	var T10_R = "t10-release";
 	var T11_R = "t11-release";
 }
+#else
 @:enum
 abstract Action(String) to String from String
 {
@@ -289,6 +289,7 @@ abstract Action(String) to String from String
 	var T10_R = "t10-release";
 	var T11_R = "t11-release";
 }
+#end
 
 enum Device
 {
