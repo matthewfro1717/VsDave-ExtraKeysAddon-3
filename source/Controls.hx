@@ -1982,14 +1982,17 @@ class Controls extends FlxActionSet
 
 	inline function addGamepadLiteral(id:Int, ?buttonMap:Map<Control, Array<FlxGamepadInputID>>):Void
 	{
+	    {
 		gamepadsAdded.push(id);
-
+		
 		for (control => buttons in buttonMap)
-			inline bindButtons(control, id, buttons);
+	    
+		     inline bindButtons(control, id, buttons);
 		#else
 		for (control in buttonMap.keys())
 			bindButtons(control, id, buttonMap[control]);
 		#end
+	    }
 	}
 
 	public function removeGamepad(deviceID:Int = FlxInputDeviceID.ALL):Void
