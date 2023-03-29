@@ -78,7 +78,8 @@ class Paths
 			{
 				return langaugeReturnPath;
 			}
-			#end
+                        #end
+			
 			else
 			{
 				return defaultReturnPath;
@@ -102,6 +103,7 @@ class Paths
 				return langaugeReturnPath;
 			}
 			#end
+			
 			else
 			{
 				return defaultReturnPath;
