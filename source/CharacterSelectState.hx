@@ -21,7 +21,6 @@ import flixel.util.FlxStringUtil;
 import flixel.FlxSprite;
 #if windows
 import lime.app.Application;
-import sys.FileSystem;
 #end
 
  /**
