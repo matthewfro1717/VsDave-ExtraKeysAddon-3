@@ -85,10 +85,6 @@ class Paths
 		if (isLocale())
 		{
 			var langaugeReturnPath = getPath('locale/${LanguageManager.save.data.language}/data/$key.txt', TEXT, library);
-			if (FileSystem.exists(langaugeReturnPath))
-			{
-				return defaultReturnPath;
-			}
 		}
 		else
 		{
