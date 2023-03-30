@@ -76,6 +76,7 @@ import flixel.util.FlxSpriteUtil;
 import flixel.effects.particles.FlxEmitter;
 import flixel.effects.particles.FlxParticle;
 import flixel.addons.effects.chainable.IFlxEffect;
+import hxcodec.VideoHandler;
 #if desktop
 import Discord.DiscordClient;
 #end
