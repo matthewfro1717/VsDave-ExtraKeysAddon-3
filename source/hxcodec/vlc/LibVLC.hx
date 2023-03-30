@@ -8,7 +8,6 @@
 
 package hxcodec.vlc;
 
-import cpp.UInt32;
 import hxcodec.vlc.helpers.VoidStarConstStar;
 
 @:buildXml("<include name='${haxelib:hxCodec}/hxcodec/vlc/LibVLCBuild.xml' />")
@@ -163,13 +162,9 @@ extern class LibVLC
 	@:native("libvlc_video_set_callbacks")
 	static function video_set_callbacks(mp:LibVLC_MediaPlayer, lock:LibVLC_Video_Lock_Callback, unlock:LibVLC_Video_Unlock_Callback,
 		display:LibVLC_Video_Display_Callback, opaque:cpp.Star<cpp.Void>):Void;
-
-	@:native("libvlc_video_get_size")
-	static function video_get_size(p_mi:LibVLC_MediaPlayer, num:UInt, width:cpp.Star<UInt32>, height:cpp.Star<UInt32>):Int;
 }
 
 typedef LibVLC_Event_Callback = cpp.Callable<(p_event:RawConstPointer<LibVLC_Event_T>, p_data:cpp.Star<cpp.Void>) -> Void>;
-typedef LibVLC_Video_Setup_Callback = cpp.Callable<(opaque:cpp.Star<cpp.Star<cpp.Void>>, chroma:cpp.Star<cpp.Char>, width:cpp.Star<UInt32>, height:cpp.Star<UInt32>, pitches:cpp.Star<UInt32>, lines:cpp.Star<UInt32>) -> UInt32>;
 typedef LibVLC_Video_Cleanup_Callback = cpp.Callable<(opaque:cpp.Star<cpp.Void>) -> Void>;
 typedef LibVLC_Video_Lock_Callback = cpp.Callable<(data:cpp.Star<cpp.Void>, p_pixels:cpp.Star<cpp.Star<cpp.Void>>) -> cpp.Star<cpp.Void>>;
 typedef LibVLC_Video_Unlock_Callback = cpp.Callable<(data:cpp.Star<cpp.Void>, id:cpp.Star<cpp.Void>, p_pixels:VoidStarConstStar) -> Void>;
