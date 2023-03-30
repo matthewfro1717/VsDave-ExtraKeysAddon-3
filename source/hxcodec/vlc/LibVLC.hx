@@ -8,13 +8,6 @@
 
 package hxcodec.vlc;
 
-#if !(desktop || android)
-#error "The current target platform isn't supported by hxCodec. If you are targeting Windows/Mac/Linux/Android and you are getting this message, please contact us.";
-#end
-import cpp.RawPointer;
-import cpp.RawConstPointer;
-import cpp.Int64;
-import cpp.UInt32;
 import hxcodec.vlc.helpers.VoidStarConstStar;
 
 typedef LibVLC_Instance = RawPointer<LibVLC_Instance_T>;
