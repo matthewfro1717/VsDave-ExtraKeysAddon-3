@@ -8,7 +8,6 @@
 
 package hxcodec.vlc;
 
-import cpp.RawConstPointer;
 import cpp.Int64;
 import cpp.UInt32;
 import hxcodec.vlc.helpers.VoidStarConstStar;
