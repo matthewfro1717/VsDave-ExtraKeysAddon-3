@@ -8,6 +8,10 @@
 
 package hxcodec.vlc;
 
+import cpp.RawPointer;
+import cpp.RawConstPointer;
+import cpp.Int64;
+import cpp.UInt32;
 import hxcodec.vlc.helpers.VoidStarConstStar;
 
 typedef LibVLC_Instance = RawPointer<LibVLC_Instance_T>;
