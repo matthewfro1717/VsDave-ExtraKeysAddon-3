@@ -1,5 +1,8 @@
 package hxcodec.vlc;
 
+import cpp.NativeArray;
+import cpp.Pointer;
+import cpp.UInt8;
 import haxe.io.Bytes;
 import haxe.io.BytesData;
 import haxe.io.Path;
