@@ -1,7 +1,6 @@
 import flixel.math.FlxMath;
 import flixel.math.FlxMath;
 import flixel.group.FlxGroup;
-import sys.io.File;
 import lime.app.Application;
 import flixel.tweens.FlxTween;
 import flixel.math.FlxRandom;
