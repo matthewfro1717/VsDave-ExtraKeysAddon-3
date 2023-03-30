@@ -8,8 +8,6 @@
 
 package hxcodec.vlc;
 
-import cpp.Int64;
-import cpp.UInt32;
 import hxcodec.vlc.helpers.VoidStarConstStar;
 
 @:buildXml("<include name='${haxelib:hxCodec}/hxcodec/vlc/LibVLCBuild.xml' />")
