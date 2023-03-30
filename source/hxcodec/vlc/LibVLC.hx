@@ -8,17 +8,10 @@
 
 package hxcodec.vlc;
 
-import cpp.RawPointer;
 import cpp.RawConstPointer;
 import cpp.Int64;
 import cpp.UInt32;
 import hxcodec.vlc.helpers.VoidStarConstStar;
-
-typedef LibVLC_Instance = RawPointer<LibVLC_Instance_T>;
-typedef LibVLC_AudioOutput = RawPointer<LibVLC_AudioOutput_T>;
-typedef LibVLC_MediaPlayer = RawPointer<LibVLC_MediaPlayer_T>;
-typedef LibVLC_Media = RawPointer<LibVLC_Media_T>;
-typedef LibVLC_EventManager = RawPointer<LibVLC_EventManager_T>;
 
 @:buildXml("<include name='${haxelib:hxCodec}/hxcodec/vlc/LibVLCBuild.xml' />")
 @:include("vlc/vlc.h")
